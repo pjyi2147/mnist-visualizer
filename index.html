@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>mnist</title>
+
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/mnist.js"></script>
+    <script src="lib/matrix.js"></script>
+    <script src="lib/nn.js"></script>
+    <script src="index.js"></script>
+
+    <style>
+        #info {
+            font-size: 25pt;
+        }
+
+        .correct {
+            color: #00CC00
+        }
+
+        .wrong {
+            color: #CC0000
+        }
+    </style>
+</head>
+
+<body>
+    <h3>MNIST training set</h3>
+    <div id="container"></div>
+    <p>↑ draw number above</p>
+    <p>Use esc to clear</p>
+    <p id="hidden_layer"></p>
+    <p id="learning_rate"></p>
+    <p id="info">
+        Trainging label: <span id="label"></span>
+		Guess: <span id="guess"></span>
+        <br />
+        Last test result: <span id="percent"></span><br />
+        <br />
+        User Guess: <span id="user_guess"></span>
+        Prob: <span id="user_guess_p"></span>
+    </p>
+    <div id="test_results">
+
+    </div>
+</body>
+
+</html>
